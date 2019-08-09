@@ -1,14 +1,8 @@
-# Flashcards_for_TM112_Glossary.py
+# Revision tool imported from a glossary
 
 """
-This flashcard program allows the user to ask for a glossary entry
-from the TM112 glossary. In response, the program
-randomly picks an entry from all TM112 glossary
-entries. It shows the entry. After the user presses return, the
-program shows the definition of that particular entry.
-The user can repeatedly ask for an entry and also
-has the option to quit the program instead of seeing
-another entry.
+This revision tool allows a user to either revise by looking up random meanings and viewing the definitions
+or test themselves by looking up a random definition then seeing if they can get the meaning correct
 """
 
 from random import *
@@ -51,7 +45,7 @@ def file_to_dictionary(filename):
 
 # Set up the glossary
 
-glossary = file_to_dictionary('TM112_Glossary.txt')
+glossary = file_to_dictionary('') #Input glossary name in these brackets
 
 # The interactive loop
 
